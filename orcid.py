@@ -39,7 +39,36 @@ def orcid_read():
                 print("Fetch failed:", e, r.text)
                 raise                            
         
-    
+def traverse_file(data, path, target):
+    path = path or []
+    if isinstance(data, dict):
+        # print(f"dict type in {path}")
+        for k, v in data.items():
+            new_path = path + f'["{k}"]'
+            if target in k:
+                yield new_path, k.split(":")[0], v
+            yield from traverse_file(data=v, path=new_path, target=target)
+    elif isinstance(data, list):
+        # print(f"list type in {path}")
+        # print(data[0])
+        for i in range(len(data)):
+            # print(idx, item)
+            # new_path = path + f"[{idx}]"
+            yield from traverse_file(data=data[i], path=path, target=target)
+        # yield from traverse_file(data=data[0], path=path, target=target)
+
+def orcid_write(dir="./data"):
+    # with open("./orcid_result.csv", 'a'):
+    with open("./orcid_result.csv", 'w') as wf:
+        for file in os.listdir(dir):
+            with open(os.path.join(dir, file), 'r') as rf:
+                data = json.load(rf)
+                wf.write(f"{data["record:record"]["person:person"]["person:name"]["personal-details:credit-name"]},{data["record:record"]["person:person"]["person:name"]["@path"]}\n")
+                # print(f"{data["record:record"]["person:person"]["person:name"]["personal-details:credit-name"]},{data["record:record"]["person:person"]["person:name"]["@path"]}")
+                # wf.write()
+                
+                gen = traverse_file(data["record:record"]["activities:activities-summary"], path='data["record:record"]["activities:activities-summary"]', target=("-summary"))
+                   
 if __name__ == '__main__':
-    orcid_read()
-    # orcid_write()
+    # orcid_read()
+    orcid_write()
