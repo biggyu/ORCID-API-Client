@@ -1,0 +1,1229 @@
+{
+  "record:record": {
+    "@path": "/0000-0003-4815-9451",
+    "@xmlns:internal": "http://www.orcid.org/ns/internal",
+    "@xmlns:education": "http://www.orcid.org/ns/education",
+    "@xmlns:distinction": "http://www.orcid.org/ns/distinction",
+    "@xmlns:deprecated": "http://www.orcid.org/ns/deprecated",
+    "@xmlns:other-name": "http://www.orcid.org/ns/other-name",
+    "@xmlns:membership": "http://www.orcid.org/ns/membership",
+    "@xmlns:error": "http://www.orcid.org/ns/error",
+    "@xmlns:common": "http://www.orcid.org/ns/common",
+    "@xmlns:record": "http://www.orcid.org/ns/record",
+    "@xmlns:personal-details": "http://www.orcid.org/ns/personal-details",
+    "@xmlns:keyword": "http://www.orcid.org/ns/keyword",
+    "@xmlns:email": "http://www.orcid.org/ns/email",
+    "@xmlns:external-identifier": "http://www.orcid.org/ns/external-identifier",
+    "@xmlns:funding": "http://www.orcid.org/ns/funding",
+    "@xmlns:preferences": "http://www.orcid.org/ns/preferences",
+    "@xmlns:address": "http://www.orcid.org/ns/address",
+    "@xmlns:invited-position": "http://www.orcid.org/ns/invited-position",
+    "@xmlns:work": "http://www.orcid.org/ns/work",
+    "@xmlns:history": "http://www.orcid.org/ns/history",
+    "@xmlns:employment": "http://www.orcid.org/ns/employment",
+    "@xmlns:qualification": "http://www.orcid.org/ns/qualification",
+    "@xmlns:service": "http://www.orcid.org/ns/service",
+    "@xmlns:person": "http://www.orcid.org/ns/person",
+    "@xmlns:activities": "http://www.orcid.org/ns/activities",
+    "@xmlns:researcher-url": "http://www.orcid.org/ns/researcher-url",
+    "@xmlns:peer-review": "http://www.orcid.org/ns/peer-review",
+    "@xmlns:bulk": "http://www.orcid.org/ns/bulk",
+    "@xmlns:research-resource": "http://www.orcid.org/ns/research-resource",
+    "common:orcid-identifier": {
+      "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+      "common:path": "0000-0003-4815-9451",
+      "common:host": "sandbox.orcid.org"
+    },
+    "preferences:preferences": {
+      "preferences:locale": "en"
+    },
+    "history:history": {
+      "history:creation-method": "Direct",
+      "history:submission-date": "2018-05-02T08:53:00.624Z",
+      "common:last-modified-date": "2020-05-04T20:11:41.301Z",
+      "history:claimed": "true",
+      "history:verified-email": "true",
+      "history:verified-primary-email": "true"
+    },
+    "person:person": {
+      "@path": "/0000-0003-4815-9451/person",
+      "common:last-modified-date": "2018-05-30T18:35:51.201Z",
+      "person:name": {
+        "@visibility": "public",
+        "@path": "0000-0003-4815-9451",
+        "common:created-date": "2018-05-02T08:53:00.624Z",
+        "common:last-modified-date": "2018-05-30T18:31:54.026Z",
+        "personal-details:given-names": "James",
+        "personal-details:family-name": "McKee",
+        "personal-details:credit-name": "James P McKee"
+      },
+      "other-name:other-names": {
+        "@path": "/0000-0003-4815-9451/other-names",
+        "common:last-modified-date": "2018-05-30T18:32:20.614Z",
+        "other-name:other-name": [
+          {
+            "@put-code": "16723",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/other-names/16723",
+            "@display-index": "4",
+            "common:created-date": "2018-05-30T18:32:20.607Z",
+            "common:last-modified-date": "2018-05-30T18:32:20.608Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "other-name:content": "Jamie McKee"
+          },
+          {
+            "@put-code": "16724",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/other-names/16724",
+            "@display-index": "3",
+            "common:created-date": "2018-05-30T18:32:20.612Z",
+            "common:last-modified-date": "2018-05-30T18:32:20.612Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "other-name:content": "JP McKee"
+          },
+          {
+            "@put-code": "16725",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/other-names/16725",
+            "@display-index": "2",
+            "common:created-date": "2018-05-30T18:32:20.614Z",
+            "common:last-modified-date": "2018-05-30T18:32:20.614Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "other-name:content": "James McKee"
+          }
+        ]
+      },
+      "person:biography": {
+        "@visibility": "public",
+        "@path": "/0000-0003-4815-9451/biography",
+        "common:created-date": "2018-05-02T09:02:57.952Z",
+        "common:last-modified-date": "2018-05-30T18:38:11.049Z",
+        "personal-details:content": "Jamie McKee is the Director of Business Development for Altum, Inc. For twenty years, Altum has been providing custom software development for the NIH and other government agencies as well as grants management products, like proposalCENTRAL, used by many HRA members. Jamie\u2019s passion is technology enabled business transformation; and, his vision is an interconnected research space which accelerates the pace of solutions for health. As an advocate of collaboration, Jamie has guided consortiums of research institutions and research funders in the cooperative development of technology solutions. An active proponent of HRA, Jamie and his team have been providing technical leadership and support for the formation of the HRA ORCID consortium."
+      },
+      "researcher-url:researcher-urls": {
+        "@path": "/0000-0003-4815-9451/researcher-urls",
+        "common:last-modified-date": "2018-05-30T18:35:51.201Z",
+        "researcher-url:researcher-url": {
+          "@put-code": "43751",
+          "@visibility": "public",
+          "@path": "/0000-0003-4815-9451/researcher-urls/43751",
+          "@display-index": "1",
+          "common:created-date": "2018-05-30T18:35:36.620Z",
+          "common:last-modified-date": "2018-05-30T18:35:51.201Z",
+          "common:source": {
+            "common:source-orcid": {
+              "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+              "common:path": "0000-0003-4815-9451",
+              "common:host": "sandbox.orcid.org"
+            },
+            "common:source-name": "James P McKee"
+          },
+          "researcher-url:url-name": "Altum",
+          "researcher-url:url": "http://www.altum.com"
+        }
+      },
+      "email:emails": {
+        "@path": "/0000-0003-4815-9451/email"
+      },
+      "address:addresses": {
+        "@path": "/0000-0003-4815-9451/address",
+        "common:last-modified-date": "2018-05-30T18:32:39.950Z",
+        "address:address": {
+          "@put-code": "4982",
+          "@visibility": "public",
+          "@path": "/0000-0003-4815-9451/address/4982",
+          "@display-index": "1",
+          "common:created-date": "2018-05-30T18:32:39.949Z",
+          "common:last-modified-date": "2018-05-30T18:32:39.950Z",
+          "common:source": {
+            "common:source-orcid": {
+              "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+              "common:path": "0000-0003-4815-9451",
+              "common:host": "sandbox.orcid.org"
+            },
+            "common:source-name": "James P McKee"
+          },
+          "address:country": "US"
+        }
+      },
+      "keyword:keywords": {
+        "@path": "/0000-0003-4815-9451/keywords",
+        "common:last-modified-date": "2018-05-30T18:34:13.615Z",
+        "keyword:keyword": [
+          {
+            "@put-code": "5457",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/keywords/5457",
+            "@display-index": "5",
+            "common:created-date": "2018-05-30T18:33:33.608Z",
+            "common:last-modified-date": "2018-05-30T18:34:13.615Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "keyword:content": "cancer"
+          },
+          {
+            "@put-code": "5458",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/keywords/5458",
+            "@display-index": "4",
+            "common:created-date": "2018-05-30T18:33:33.611Z",
+            "common:last-modified-date": "2018-05-30T18:34:13.615Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "keyword:content": "pediatric cancer"
+          },
+          {
+            "@put-code": "5459",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/keywords/5459",
+            "@display-index": "3",
+            "common:created-date": "2018-05-30T18:33:33.612Z",
+            "common:last-modified-date": "2018-05-30T18:34:13.615Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "keyword:content": "neuroblastoma"
+          },
+          {
+            "@put-code": "5460",
+            "@visibility": "public",
+            "@path": "/0000-0003-4815-9451/keywords/5460",
+            "@display-index": "2",
+            "common:created-date": "2018-05-30T18:33:33.614Z",
+            "common:last-modified-date": "2018-05-30T18:34:13.615Z",
+            "common:source": {
+              "common:source-orcid": {
+                "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                "common:path": "0000-0003-4815-9451",
+                "common:host": "sandbox.orcid.org"
+              },
+              "common:source-name": "James P McKee"
+            },
+            "keyword:content": "neurofibromatosis"
+          }
+        ]
+      },
+      "external-identifier:external-identifiers": {
+        "@path": "/0000-0003-4815-9451/external-identifiers"
+      }
+    },
+    "activities:activities-summary": {
+      "@path": "/0000-0003-4815-9451/activities",
+      "common:last-modified-date": "2018-08-30T20:30:18.253Z",
+      "activities:distinctions": {
+        "@path": "/0000-0003-4815-9451/distinctions"
+      },
+      "activities:educations": {
+        "@path": "/0000-0003-4815-9451/educations",
+        "common:last-modified-date": "2018-05-30T18:41:23.956Z",
+        "activities:affiliation-group": [
+          {
+            "common:last-modified-date": "2018-05-30T18:41:23.956Z",
+            "common:external-ids": null,
+            "education:education-summary": {
+              "@put-code": "30777",
+              "@display-index": "0",
+              "@path": "/0000-0003-4815-9451/education/30777",
+              "@visibility": "public",
+              "common:created-date": "2018-05-30T18:41:23.956Z",
+              "common:last-modified-date": "2018-05-30T18:41:23.956Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "common:department-name": "Darden School of Business",
+              "common:role-title": "MBA",
+              "common:start-date": {
+                "common:year": "2003",
+                "common:month": "09",
+                "common:day": "01"
+              },
+              "common:end-date": {
+                "common:year": "2005",
+                "common:month": "07",
+                "common:day": "01"
+              },
+              "common:organization": {
+                "common:name": "University of Virginia",
+                "common:address": {
+                  "common:city": "Charlottesville",
+                  "common:region": "VA",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "2358",
+                  "common:disambiguation-source": "RINGGOLD"
+                }
+              }
+            }
+          },
+          {
+            "common:last-modified-date": "2018-05-30T18:39:54.029Z",
+            "common:external-ids": null,
+            "education:education-summary": {
+              "@put-code": "30776",
+              "@display-index": "0",
+              "@path": "/0000-0003-4815-9451/education/30776",
+              "@visibility": "public",
+              "common:created-date": "2018-05-30T18:39:54.029Z",
+              "common:last-modified-date": "2018-05-30T18:39:54.029Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "common:department-name": "Mechanical Engineering",
+              "common:role-title": "BS Mechanical Engineering",
+              "common:start-date": {
+                "common:year": "1982",
+                "common:month": "09",
+                "common:day": "01"
+              },
+              "common:end-date": {
+                "common:year": "1987",
+                "common:month": "07",
+                "common:day": "01"
+              },
+              "common:organization": {
+                "common:name": "Virginia Polytechnic Institute and State University",
+                "common:address": {
+                  "common:city": "Blacksburg",
+                  "common:region": "VA",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "1757",
+                  "common:disambiguation-source": "RINGGOLD"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "activities:employments": {
+        "@path": "/0000-0003-4815-9451/employments",
+        "common:last-modified-date": "2018-08-30T20:30:18.253Z",
+        "activities:affiliation-group": [
+          {
+            "common:last-modified-date": "2018-08-30T20:30:18.253Z",
+            "common:external-ids": null,
+            "employment:employment-summary": {
+              "@put-code": "30778",
+              "@display-index": "1",
+              "@path": "/0000-0003-4815-9451/employment/30778",
+              "@visibility": "public",
+              "common:created-date": "2018-05-30T18:43:10.222Z",
+              "common:last-modified-date": "2018-08-30T20:30:18.253Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "common:department-name": "School of Medicine",
+              "common:role-title": "Senior Professor",
+              "common:start-date": {
+                "common:year": "2018",
+                "common:month": "07",
+                "common:day": "15"
+              },
+              "common:organization": {
+                "common:name": "University of California, San Francisco",
+                "common:address": {
+                  "common:city": "CA",
+                  "common:region": "CA",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100008069",
+                  "common:disambiguation-source": "FUNDREF"
+                }
+              }
+            }
+          },
+          {
+            "common:last-modified-date": "2018-05-30T18:45:31.285Z",
+            "common:external-ids": null,
+            "employment:employment-summary": {
+              "@put-code": "30780",
+              "@display-index": "0",
+              "@path": "/0000-0003-4815-9451/employment/30780",
+              "@visibility": "public",
+              "common:created-date": "2018-05-30T18:45:31.285Z",
+              "common:last-modified-date": "2018-05-30T18:45:31.285Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "common:department-name": "Sales",
+              "common:role-title": "Director of Business Development",
+              "common:start-date": {
+                "common:year": "2007",
+                "common:month": "07",
+                "common:day": "15"
+              },
+              "common:organization": {
+                "common:name": "Altum Inc.",
+                "common:address": {
+                  "common:city": "Reston",
+                  "common:region": "Virginia",
+                  "common:country": "US"
+                }
+              },
+              "common:url": "http://www.altum.com"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-05-30T18:44:33.414Z",
+            "common:external-ids": null,
+            "employment:employment-summary": {
+              "@put-code": "30779",
+              "@display-index": "0",
+              "@path": "/0000-0003-4815-9451/employment/30779",
+              "@visibility": "public",
+              "common:created-date": "2018-05-30T18:44:33.414Z",
+              "common:last-modified-date": "2018-05-30T18:44:33.414Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "common:department-name": "Sales",
+              "common:role-title": "Director of Sales",
+              "common:start-date": {
+                "common:year": "2000",
+                "common:month": "09",
+                "common:day": "15"
+              },
+              "common:end-date": {
+                "common:year": "2007",
+                "common:month": "07",
+                "common:day": "01"
+              },
+              "common:organization": {
+                "common:name": "Research Management Systems",
+                "common:address": {
+                  "common:city": "Germantown",
+                  "common:region": "Maryland",
+                  "common:country": "US"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "activities:fundings": {
+        "@path": "/0000-0003-4815-9451/fundings",
+        "common:last-modified-date": "2018-08-17T17:29:28.738Z",
+        "activities:group": [
+          {
+            "common:last-modified-date": "2018-08-17T17:23:20.118Z",
+            "common:external-ids": {
+              "common:external-id": {
+                "common:external-id-type": "grant_number",
+                "common:external-id-value": "Z01CB008525",
+                "common:external-id-url": "https://projectreporter.nih.gov/project_info_description.cfm?aid=3939309",
+                "common:external-id-relationship": "self"
+              }
+            },
+            "funding:funding-summary": {
+              "@put-code": "10183",
+              "@path": "/0000-0003-4815-9451/funding/10183",
+              "@visibility": "public",
+              "@display-index": "1",
+              "common:created-date": "2018-08-17T17:23:20.118Z",
+              "common:last-modified-date": "2018-08-17T17:23:20.118Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "funding:title": {
+                "common:title": "IMMUNOTHERAPY OF PRIMARY AUTOCHTHONOUS CANCER"
+              },
+              "common:external-ids": {
+                "common:external-id": {
+                  "common:external-id-type": "grant_number",
+                  "common:external-id-value": "Z01CB008525",
+                  "common:external-id-url": "https://projectreporter.nih.gov/project_info_description.cfm?aid=3939309",
+                  "common:external-id-relationship": "self"
+                }
+              },
+              "funding:type": "grant",
+              "common:start-date": {
+                "common:year": "2015",
+                "common:month": "10"
+              },
+              "common:end-date": {
+                "common:year": "2018",
+                "common:month": "10"
+              },
+              "common:organization": {
+                "common:name": "National Cancer Institute",
+                "common:address": {
+                  "common:city": "MD",
+                  "common:region": "MD",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100000054",
+                  "common:disambiguation-source": "FUNDREF"
+                }
+              }
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:26:17.608Z",
+            "common:external-ids": {
+              "common:external-id": {
+                "common:external-id-type": "grant_number",
+                "common:external-id-value": "F30CA213878",
+                "common:external-id-url": "https://projectreporter.nih.gov/project_info_description.cfm?aid=9419707",
+                "common:external-id-relationship": "self"
+              }
+            },
+            "funding:funding-summary": {
+              "@put-code": "10184",
+              "@path": "/0000-0003-4815-9451/funding/10184",
+              "@visibility": "public",
+              "@display-index": "1",
+              "common:created-date": "2018-08-17T17:26:17.608Z",
+              "common:last-modified-date": "2018-08-17T17:26:17.608Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "funding:title": {
+                "common:title": "Co-Evolution of the CD8+ T Cell Repertoire and AML In the Setting of Immunotherapy"
+              },
+              "common:external-ids": {
+                "common:external-id": {
+                  "common:external-id-type": "grant_number",
+                  "common:external-id-value": "F30CA213878",
+                  "common:external-id-url": "https://projectreporter.nih.gov/project_info_description.cfm?aid=9419707",
+                  "common:external-id-relationship": "self"
+                }
+              },
+              "funding:type": "grant",
+              "common:start-date": {
+                "common:year": "2017",
+                "common:month": "06"
+              },
+              "common:end-date": {
+                "common:year": "2021",
+                "common:month": "05"
+              },
+              "common:organization": {
+                "common:name": "National Cancer Institute",
+                "common:address": {
+                  "common:city": "MD",
+                  "common:region": "MD",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100000054",
+                  "common:disambiguation-source": "FUNDREF"
+                }
+              }
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:29:28.738Z",
+            "common:external-ids": null,
+            "funding:funding-summary": {
+              "@put-code": "10185",
+              "@path": "/0000-0003-4815-9451/funding/10185",
+              "@visibility": "public",
+              "@display-index": "1",
+              "common:created-date": "2018-08-17T17:29:28.738Z",
+              "common:last-modified-date": "2018-08-17T17:29:28.738Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "funding:title": {
+                "common:title": "CD8+ T Cell-Mediated Immunotherapy of Autochthonous SV40 T Antigen-Induced Tumors"
+              },
+              "common:external-ids": {
+                "common:external-id": {
+                  "common:external-id-type": "grant_number",
+                  "common:external-id-value": "R01CA025000",
+                  "common:external-id-url": "https://projectreporter.nih.gov/project_info_description.cfm?aid=8585821",
+                  "common:external-id-relationship": "part-of"
+                }
+              },
+              "funding:type": "grant",
+              "common:start-date": {
+                "common:year": "2018",
+                "common:month": "02"
+              },
+              "common:end-date": {
+                "common:year": "2028",
+                "common:month": "02"
+              },
+              "common:organization": {
+                "common:name": "National Cancer Institute",
+                "common:address": {
+                  "common:city": "MD",
+                  "common:region": "MD",
+                  "common:country": "US"
+                },
+                "common:disambiguated-organization": {
+                  "common:disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100000054",
+                  "common:disambiguation-source": "FUNDREF"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "activities:invited-positions": {
+        "@path": "/0000-0003-4815-9451/invited-positions"
+      },
+      "activities:memberships": {
+        "@path": "/0000-0003-4815-9451/memberships"
+      },
+      "activities:peer-reviews": {
+        "@path": "/0000-0003-4815-9451/peer-reviews"
+      },
+      "activities:qualifications": {
+        "@path": "/0000-0003-4815-9451/qualifications"
+      },
+      "activities:research-resources": {
+        "@path": "/0000-0003-4815-9451/research-resources"
+      },
+      "activities:services": {
+        "@path": "/0000-0003-4815-9451/services"
+      },
+      "activities:works": {
+        "@path": "/0000-0003-4815-9451/works",
+        "common:last-modified-date": "2018-08-17T17:39:02.330Z",
+        "activities:group": [
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.224Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "pmc",
+                  "common:external-id-value": "PMC5838871",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "5838871"
+                  },
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.1186/s13063-018-2542-6",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.1186/s13063-018-2542-6"
+                  },
+                  "common:external-id-url": "https://doi.org/10.1186/s13063-018-2542-6",
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "29506580",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "29506580"
+                  },
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943454",
+              "@path": "/0000-0003-4815-9451/work/943454",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.224Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.224Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "The REstart or STop Antithrombotics Randomised Trial (RESTART) after stroke due to intracerebral haemorrhage: study protocol for a randomised controlled trial."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "29506580",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "29506580"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "pmc",
+                    "common:external-id-value": "PMC5838871",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "5838871"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.1186/s13063-018-2542-6",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.1186/s13063-018-2542-6"
+                    },
+                    "common:external-id-url": "https://doi.org/10.1186/s13063-018-2542-6",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/29506580",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2018",
+                "common:month": "03"
+              },
+              "work:journal-title": "Trials"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.255Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "29172994",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "29172994"
+                  },
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.1177/1352458517742979",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.1177/1352458517742979"
+                  },
+                  "common:external-id-url": "https://doi.org/10.1177/1352458517742979",
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943457",
+              "@path": "/0000-0003-4815-9451/work/943457",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.255Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.255Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "Amiloride does not protect retinal nerve fibre layer thickness in optic neuritis in a phase 2 randomised controlled trial."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "29172994",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "29172994"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.1177/1352458517742979",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.1177/1352458517742979"
+                    },
+                    "common:external-id-url": "https://doi.org/10.1177/1352458517742979",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/29172994",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2017",
+                "common:month": "11"
+              },
+              "work:journal-title": "Multiple sclerosis (Houndmills, Basingstoke, England)"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.276Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "28835314",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "28835314"
+                  },
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.1017/s1049023x17006926",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.1017/s1049023x17006926"
+                  },
+                  "common:external-id-url": "https://doi.org/10.1017/s1049023x17006926",
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943459",
+              "@path": "/0000-0003-4815-9451/work/943459",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.276Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.276Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "Evaluation of Skin Damage from Accidental Removal of a Hemostatic Wound Clamp (The iTClamp)."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "28835314",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "28835314"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.1017/s1049023x17006926",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.1017/s1049023x17006926"
+                    },
+                    "common:external-id-url": "https://doi.org/10.1017/s1049023x17006926",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/28835314",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2017",
+                "common:month": "08"
+              },
+              "work:journal-title": "Prehospital and disaster medicine"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.321Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "28576963",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "28576963"
+                  },
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.18043/ncm.78.3.202",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.18043/ncm.78.3.202"
+                  },
+                  "common:external-id-url": "https://doi.org/10.18043/ncm.78.3.202",
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943463",
+              "@path": "/0000-0003-4815-9451/work/943463",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.321Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.321Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "The Role of Pharmacists in the Opioid Epidemic: An Examination of Pharmacist-Focused Initiatives Across the United States and North Carolina."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "28576963",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "28576963"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.18043/ncm.78.3.202",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.18043/ncm.78.3.202"
+                    },
+                    "common:external-id-url": "https://doi.org/10.18043/ncm.78.3.202",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/28576963",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2017",
+                "common:month": "05"
+              },
+              "work:journal-title": "North Carolina medical journal"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.299Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "28502071",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "28502071"
+                  },
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.5603/ait.a2017.0019",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.5603/ait.a2017.0019"
+                  },
+                  "common:external-id-url": "https://doi.org/10.5603/ait.a2017.0019",
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943461",
+              "@path": "/0000-0003-4815-9451/work/943461",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.299Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.299Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "Update from the Abdominal Compartment Society (WSACS) on intra-abdominal hypertension and abdominal compartment syndrome: past, present, and future beyond Banff 2017."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "28502071",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "28502071"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.5603/ait.a2017.0019",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.5603/ait.a2017.0019"
+                    },
+                    "common:external-id-url": "https://doi.org/10.5603/ait.a2017.0019",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/28502071",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2017",
+                "common:month": "05"
+              },
+              "work:journal-title": "Anaesthesiology intensive therapy"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-08-17T17:39:02.330Z",
+            "common:external-ids": {
+              "common:external-id": [
+                {
+                  "common:external-id-type": "doi",
+                  "common:external-id-value": "10.1016/j.japh.2017.02.020",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "10.1016/j.japh.2017.02.020"
+                  },
+                  "common:external-id-url": "https://doi.org/10.1016/j.japh.2017.02.020",
+                  "common:external-id-relationship": "self"
+                },
+                {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "28408170",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "28408170"
+                  },
+                  "common:external-id-relationship": "self"
+                }
+              ]
+            },
+            "work:work-summary": {
+              "@put-code": "943464",
+              "@path": "/0000-0003-4815-9451/work/943464",
+              "@visibility": "public",
+              "@display-index": "0",
+              "common:created-date": "2018-08-17T17:39:02.330Z",
+              "common:last-modified-date": "2018-08-17T17:39:02.330Z",
+              "common:source": {
+                "common:source-client-id": {
+                  "common:uri": "https://sandbox.orcid.org/client/0000-0003-3278-7808",
+                  "common:path": "0000-0003-3278-7808",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "Europe PMC Test",
+                "common:assertion-origin-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:assertion-origin-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "Community pharmacists' attitudes toward providing care and services to patients with severe and persistent mental illness."
+              },
+              "common:external-ids": {
+                "common:external-id": [
+                  {
+                    "common:external-id-type": "pmid",
+                    "common:external-id-value": "28408170",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "28408170"
+                    },
+                    "common:external-id-relationship": "self"
+                  },
+                  {
+                    "common:external-id-type": "doi",
+                    "common:external-id-value": "10.1016/j.japh.2017.02.020",
+                    "common:external-id-normalized": {
+                      "@transient": "true",
+                      "#text": "10.1016/j.japh.2017.02.020"
+                    },
+                    "common:external-id-url": "https://doi.org/10.1016/j.japh.2017.02.020",
+                    "common:external-id-relationship": "self"
+                  }
+                ]
+              },
+              "common:url": "http://europepmc.org/abstract/med/28408170",
+              "work:type": "journal-article",
+              "common:publication-date": {
+                "common:year": "2017",
+                "common:month": "04"
+              },
+              "work:journal-title": "Journal of the American Pharmacists Association : JAPhA"
+            }
+          },
+          {
+            "common:last-modified-date": "2018-05-30T19:00:20.010Z",
+            "common:external-ids": {
+              "common:external-id": {
+                "common:external-id-type": "pmid",
+                "common:external-id-value": "27682969",
+                "common:external-id-normalized": {
+                  "@transient": "true",
+                  "#text": "27682969"
+                },
+                "common:external-id-url": "http://europepmc.org/abstract/med/27682969",
+                "common:external-id-relationship": "self"
+              }
+            },
+            "work:work-summary": {
+              "@put-code": "932531",
+              "@path": "/0000-0003-4815-9451/work/932531",
+              "@visibility": "public",
+              "@display-index": "1",
+              "common:created-date": "2018-05-30T19:00:20.010Z",
+              "common:last-modified-date": "2018-05-30T19:00:20.010Z",
+              "common:source": {
+                "common:source-orcid": {
+                  "common:uri": "https://sandbox.orcid.org/0000-0003-4815-9451",
+                  "common:path": "0000-0003-4815-9451",
+                  "common:host": "sandbox.orcid.org"
+                },
+                "common:source-name": "James P McKee"
+              },
+              "work:title": {
+                "common:title": "test publication 2"
+              },
+              "common:external-ids": {
+                "common:external-id": {
+                  "common:external-id-type": "pmid",
+                  "common:external-id-value": "27682969",
+                  "common:external-id-normalized": {
+                    "@transient": "true",
+                    "#text": "27682969"
+                  },
+                  "common:external-id-url": "http://europepmc.org/abstract/med/27682969",
+                  "common:external-id-relationship": "self"
+                }
+              },
+              "common:url": "http://www.ncbi.nlm.nih.gov/pubmed/27682969",
+              "work:type": "working-paper",
+              "common:publication-date": {
+                "common:year": "2009",
+                "common:month": "11",
+                "common:day": "16"
+              },
+              "work:journal-title": "Research Management Systems"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
