@@ -45,7 +45,7 @@ def orcid_read(is_public=True):
                 r = requests.get(public_url, headers=record_headers)
                 r.raise_for_status()
                 personal_dict = xmltodict.parse(r.text)["personal-details:personal-details"]["personal-details:name"]
-                print(personal_dict)
+                # print(personal_dict)
             except requests.exceptions.HTTPError as e:
                 print("Fetch failed:", e, r.text)
                 raise
@@ -60,59 +60,59 @@ def orcid_read(is_public=True):
                 r.raise_for_status()
                 record_dict = xmltodict.parse(r.text)
                 os.makedirs("./data", exist_ok=True)
-                # with open(f"data/tmp_{orcid_id}.json", 'w') as f:
-                #     f.write(json.dumps(record_dict, indent=2))
-                codes = ",".join(traverse_file(record_dict, target=("@put-code")))
+                codes = []
+                for i, code in enumerate(traverse_file(record_dict, target=("@put-code"))):
+                    if i % 100 == 0:
+                        codes.append(code)
+                    else:
+                        codes[len(codes) - 1] += f",{code}"
+                # codes = ",".join(traverse_file(record_dict, target=("@put-code")))
                 # print(codes)
-                work_url = f"https://pub.{"" if is_public else "sandbox."}orcid.org/v3.0/{orcid_id}/works/{codes}"
-                record_headers = {
-                    "Accept": "application/vnd.orcid+xml",
-                    "Authorization": f"Bearer {access_token}"
-                }
-                try:
-                    r = requests.get(work_url, headers=record_headers)
-                    r.raise_for_status()
-                    work_dict = xmltodict.parse(r.text)
-                    # print(personal_dict["personal-details:personal-details"]["@path"].split("/")[1])
-                    # os.makedirs(f"./data/{orcid_id}", exist_ok=True)
-                    with open(f"./data/{orcid_id}.json", 'w') as f:
-                        orcid_detail = {}
-                        # personal_name = personal_dict["personal-details:personal-details"]["personal-details:name"]
+                orcid_detail = {}
+                for idx, code in enumerate(codes):
+                    work_url = f"https://pub.{"" if is_public else "sandbox."}orcid.org/v3.0/{orcid_id}/works/{code}"
+                    record_headers = {
+                        "Accept": "application/vnd.orcid+xml",
+                        "Authorization": f"Bearer {access_token}"
+                    }
+                    try:
+                        r = requests.get(work_url, headers=record_headers)
+                        r.raise_for_status()
+                        work_dict = xmltodict.parse(r.text)
                         if "personal-details:credit-name" in personal_dict.keys():
                             orcid_detail['name'] = personal_dict["personal-details:credit-name"]
                         else:
                             if "personal-details:given-names" in personal_dict.keys():
                                 orcid_detail['name'] = personal_dict["personal-details:given-names"]
-                            if "personal-details:family-names" in personal_dict.keys():
-                                orcid_detail['name'] = orcid_detail['name'] + " " + personal_dict["personal-details:given-names"]
-                            # orcid_detail['name'] = personal_dict["personal-details:given-names"] + " " + personal_dict["personal-details:family-name"]
+                            if "personal-details:family-name" in personal_dict.keys():
+                                orcid_detail['name'] += " " + personal_dict["personal-details:family-name"]
+                                # orcid_detail['name'] = personal_dict["personal-details:given-names"] + " " + personal_dict["personal-details:family-name"]
                         orcid_detail['ID'] = orcid_id
-                        orcid_detail['works'] = work_dict["bulk:bulk"]["work:work"]
-                        f.write(json.dumps(orcid_detail, indent=2))
-                        # f.write(json.dumps(work_dict["activities:works"]["activities:group"], indent=2))
-                except requests.exceptions.HTTPError as e:
-                    print("Fetch failed:", e, r.text)
-                    raise
+                        if idx == 0:
+                            orcid_detail['works'] = work_dict["bulk:bulk"]["work:work"]
+                        else:
+                            orcid_detail['works'] += work_dict["bulk:bulk"]["work:work"]
+                            
+                    except requests.exceptions.HTTPError as e:
+                        print("Fetch failed:", e, r.text)
+                        raise
+                    
+                with open(f"./data/{orcid_id}.json", 'w') as f:
+                    f.write(json.dumps(orcid_detail, indent=2))
                         
                 print(f"{orcid_id}: Record fetched successfully:")
-                # with open(f'{orcid_id}_result.xml', 'w') as f:
-                #     f.write(r.text)
-                # print(r.text)
             except requests.exceptions.HTTPError as e:
                 print("Fetch failed:", e, r.text)
                 raise                            
 
 def orcid_write(dir="./data"):
-    # with open("./orcid_result.csv", 'a'):
     with open("./orcid_result.csv", 'w', encoding="utf-8-sig") as wf:
         for file in os.listdir(dir):
             rf = open(os.path.join(dir, file), 'r')
             data = json.load(rf)
             wf.write(f"{data['name']},{data['ID']}\n")
-            print(data['ID'])
             for idx, work in enumerate(data['works']):
-                print(idx)
-                wf.write(f",{idx},")
+                wf.write(f",{idx + 1},")
                 if work["work:type"] == "book":
                     if "\"" in work["work:title"]["common:title"]:
                         title_info = work["work:title"]["common:title"].split("\"")
