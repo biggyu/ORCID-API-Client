@@ -3,7 +3,7 @@ import os,requests, xmltodict, json
 load_dotenv()
 token_url = os.getenv("TOKEN_URL")
 token_headers = json.loads(os.getenv("TOKEN_HEADERS"))
-token_data = json.loads(os.getenv("TOKEN_DATA"))
+token_read_data = json.loads(os.getenv("TOKEN_READ_DATA"))
 
 def traverse_file(data, target):
     # path = path or []
@@ -23,9 +23,9 @@ def traverse_file(data, target):
             yield from traverse_file(data=data[i], target=target)
         # yield from traverse_file(data=data[0], path=path, target=target)
 
-def orcid_read(is_public=True):
+def orcid2json(is_public=True):
     try:
-        r = requests.post(token_url, headers=token_headers, data=token_data)
+        r = requests.post(token_url, headers=token_headers, data=token_read_data)
         r.raise_for_status()
         access_token = r.json()["access_token"]
         # print("Obtained token:", access_token)
@@ -33,7 +33,7 @@ def orcid_read(is_public=True):
         print("Token request failed:", e, r.text)
         raise
     
-    with open('./orcid_id.txt', 'r') as f:
+    with open('./orcid_read_id.txt', 'r') as f:
         for orcid_id in f.readlines():
             orcid_id = orcid_id.strip()
             public_url = f"https://pub.{"" if is_public else "sandbox."}orcid.org/v3.0/{orcid_id}/personal-details"
@@ -105,7 +105,7 @@ def orcid_read(is_public=True):
                 print("Fetch failed:", e, r.text)
                 raise                            
 
-def orcid_write(dir="./data"):
+def json2csv(dir="./data"):
     with open("./orcid_result.csv", 'w', encoding="utf-8-sig") as wf:
         for file in os.listdir(dir):
             rf = open(os.path.join(dir, file), 'r')
@@ -113,22 +113,33 @@ def orcid_write(dir="./data"):
             wf.write(f"{data['name']},{data['ID']}\n")
             for idx, work in enumerate(data['works']):
                 wf.write(f",{idx + 1},")
-                if work["work:type"] == "book":
-                    if "\"" in work["work:title"]["common:title"]:
-                        title_info = work["work:title"]["common:title"].split("\"")
-                        wf.write(f'{title_info[1]}\n')
-                        wf.write(f',{",".join(title_info[2].split(",")[:-1])}\n')
+                # if work["work:type"] == "book":
+                #     if "\"" in work["work:title"]["common:title"]:
+                #         title_info = work["work:title"]["common:title"].split("\"")
+                #         wf.write(f'{title_info[1]}\n')
+                #         wf.write(f',{",".join(title_info[2].split(",")[:-1])}\n')
+                #     else:
+                #         wf.write(f"{work["work:title"]["common:title"]}\n")
+                # else:
+                #     wf.write(f'{work["work:title"]["common:title"]}\n,')
+                #     # print(work["work:contributors"]["work:contributor"])
+                #     if work["work:contributors"] is not None:
+                #         if type(work["work:contributors"]["work:contributor"]) is list:
+                #             for contributor in work["work:contributors"]["work:contributor"]:
+                #                 wf.write(f',{contributor["work:credit-name"]}')
+                #         else:
+                #             wf.write(f',{work["work:contributors"]["work:contributor"]["work:credit-name"]}')
+                #     else:
+                #         wf.write("\n")
+                wf.write(f'{work["work:title"]["common:title"]}\n,')
+                if work["work:contributors"] is not None:
+                    if type(work["work:contributors"]["work:contributor"]) is list:
+                        for contributor in work["work:contributors"]["work:contributor"]:
+                            wf.write(f',{contributor["work:credit-name"]}')
                     else:
-                        wf.write(f"{work["work:title"]["common:title"]}\n")
+                        wf.write(f',{work["work:contributors"]["work:contributor"]["work:credit-name"]}')
+                    wf.write("\n")
                 else:
-                    wf.write(f'{work["work:title"]["common:title"]}\n,')
-                    # print(work["work:contributors"]["work:contributor"])
-                    if work["work:contributors"] is not None:
-                        if type(work["work:contributors"]["work:contributor"]) is list:
-                            for contributor in work["work:contributors"]["work:contributor"]:
-                                wf.write(f',{contributor["work:credit-name"]}')
-                        else:
-                            wf.write(f',{work["work:contributors"]["work:contributor"]["work:credit-name"]}')
                     wf.write("\n")
                 # wf.write(f',,{work['work:journal-title'] if 'work:journal-title' in work.keys() else {work["work:type"]}}\n')
                 if "work:journal-title" in work.keys():
@@ -142,5 +153,5 @@ def orcid_write(dir="./data"):
         
     
 if __name__ == '__main__':
-    orcid_read()
-    orcid_write()
+    orcid2json()
+    json2csv()
